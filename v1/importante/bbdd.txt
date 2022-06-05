@@ -1,0 +1,26 @@
+create table atracciones (
+	id integer not null primary key autoincrement, 
+	fila integer not null,
+	col integer not null,
+	tiempoPorDefecto integer not null,
+);
+
+
+create table visitantes (
+	id integer not null primary key autoincrement, 
+	usrname varchar(50) unique not null,
+	passwd varchar(20) not null,
+	simbolo char not null
+);
+
+
+insert into atracciones (fila, col, tiempoPorDefecto) values (1, 1, 30);
+insert into atracciones (fila, col, tiempoPorDefecto) values (15, 17, 32);
+insert into atracciones (fila, col, tiempoPorDefecto) values (7, 9, 30);
+insert into atracciones (fila, col, tiempoPorDefecto) values (15, 2, 30);
+insert into atracciones (fila, col, tiempoPorDefecto) values (13, 14, 30);
+insert into atracciones (fila, col, tiempoPorDefecto) values (2, 16, 30);
+
+
+select * from atracciones
+select * from visitantes
